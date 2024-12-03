@@ -1,0 +1,21 @@
+$schema: "http://json-schema.org/draft-06/schema#"
+description: snakemake recount3_data configuration file
+properties:
+  datasets:
+    type: array
+    items:
+      type: string
+      methods:
+    minItems: 1
+    uniqueItems: true
+  output_path:
+    type: string
+    methods:
+    minLength: 1
+    pattern: ^[a-zA-Z0-9_/.-]+$
+    description: Path to save the downloaded data
+
+
+required:
+  - datasets
+  - output_path

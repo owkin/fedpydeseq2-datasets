@@ -1,0 +1,11 @@
+channels:
+  - conda-forge
+  - bioconda
+  - default
+dependencies:
+  - r-base = 4.3.1
+  - bioconductor-snapcount = 1.12.0
+  - bioconductor-recount = 1.26.0
+  - bioconductor-recount3 = 1.10.2
+  - r-data.table = 1.14.8
+  - r-dbplyr = 2.3.4

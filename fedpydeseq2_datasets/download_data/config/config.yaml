@@ -1,0 +1,9 @@
+datasets :
+  - LUAD
+  - LUSC
+  - PAAD
+  - COAD
+  - BRCA
+  - PRAD
+  - READ
+  - SKCM
