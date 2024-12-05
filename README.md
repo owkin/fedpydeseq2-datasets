@@ -1,10 +1,19 @@
-# Datasets organisation
+# FedPyDESeq2 datasets
 
-This directory contains the data, assets and scripts necessary to:
+This repository complements [FedPyDESeq2](https://github.com/owkin/fedpydeseq2), by providing scripts to download and preprocess the
+[TCGA](https://www.cancer.gov/tcga) data used in the FedPyDESeq2 preprint.
+
+More precisely, it contains the data, assets and scripts necessary to:
 - download the raw data necessary to run the tests and experiments, when not
     available in the repository, in the `download_data` directory;
 - open the data when performing a Substra experiment in the `assets` directory;
 - store the data in the `data` directory.
+
+## Installation
+
+You can install the package from PyPI using the following command:
+
+`pip install fedpydeseq2-datasets`
 
 ## Data download
 
@@ -12,7 +21,6 @@ For a detailed description of the data download process, please refer to the
 [README](fedpydeseq2_datasets/download_data/README.md).
 
 If you want to run the pipeline directly, you can use the script which is available in the distribution: `fedpydeseq2-download-data`
-
 
 
 ```bash
