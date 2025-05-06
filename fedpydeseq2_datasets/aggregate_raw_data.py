@@ -96,7 +96,7 @@ def run_sanity_checks_raw_data(
     # Load it
 
     # specify the dtype of the columns to avoid warnings
-    dtype_dict = {col: "object" for col in LIST_COL_WITH_UNSPECIFIED_TYPE}
+    dtype_dict = dict.fromkeys(LIST_COL_WITH_UNSPECIFIED_TYPE, "object")
     recount3_metadata = pd.read_csv(
         raw_data_path / "tcga" / cohort / "recount3_metadata.tsv.gz",
         sep="\t",
@@ -209,7 +209,7 @@ def common_preprocessing_tcga(
 
     counts = pd.read_parquet(raw_data_path / "tcga" / cohort / "Counts_raw.parquet")
     # specify the dtype of the columns to avoid warnings
-    dtype_dict = {col: "object" for col in LIST_COL_WITH_UNSPECIFIED_TYPE}
+    dtype_dict = dict.fromkeys(LIST_COL_WITH_UNSPECIFIED_TYPE, "object")
     recount3_metadata = pd.read_csv(
         raw_data_path / "tcga" / cohort / "recount3_metadata.tsv.gz",
         sep="\t",
